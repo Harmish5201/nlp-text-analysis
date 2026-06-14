@@ -174,7 +174,7 @@ To improve these scores, subsequent iterations could explore **Kneser-Ney smooth
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <your-github-repo-link>
+   git clone https://github.com/Harmish5201/nlp-text-analysis
    cd nlp-text-analysis
    ```
 2. Install the minimal dependencies:
@@ -187,16 +187,3 @@ Run the unified script to train the model, calculate statistics, and generate al
 ```bash
 python run.py
 ```
-```
-
----
-
-### Next Steps
-1. Create a file named `README.md` in your local `nlp-text-analysis` directory.
-2. Paste the markdown block above into it.
-3. Commit and push the updated files to your GitHub repository:
-   ```bash
-   git add .
-   git commit -m "docs: create README detailing analytical findings and visualizations"
-   git push origin main
-   ```
