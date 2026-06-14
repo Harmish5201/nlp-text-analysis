@@ -3,10 +3,13 @@ import math
 import string
 import matplotlib.pyplot as plt
 
-def analyze_zipfs_law(filepath="data/jungle_book.txt", plot_output_path="zipfs_law_plot.png"):
+def analyze_zipfs_law(filepath="data/jungle_book.txt", plot_output_path="plots/zipfs_law_plot.png"):
     if not os.path.exists(filepath):
         print(f"Error: Dataset not found at '{filepath}'. Please verify the path.")
         return None
+
+    # Ensure output directory exists
+    os.makedirs(os.path.dirname(plot_output_path), exist_ok=True)
 
     with open(filepath, "r", encoding="utf-8") as file:
         text = file.read().lower()
@@ -55,5 +58,5 @@ def analyze_zipfs_law(filepath="data/jungle_book.txt", plot_output_path="zipfs_l
     plt.tight_layout()
     plt.savefig(plot_output_path)
     plt.close()
-    print(f"\n[Zipf's Law] Visualizations saved to: {plot_output_path}")
+    print(f"[Zipf's Law] Visualizations saved to: {plot_output_path}")
     return words
