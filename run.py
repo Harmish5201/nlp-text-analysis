@@ -22,13 +22,13 @@ def main():
     pmi_plot = os.path.join(plot_dir, "pmi_distribution.png")
     lm_plot = os.path.join(plot_dir, "perplexity_comparison.png")
 
-    print("--- TASK 1: ZIPF'S LAW ---")
+    print("--- ZIPF'S LAW ---")
     analyze_zipfs_law(jungle_book_path, zipf_plot)
 
-    print("\n--- TASK 2: POINTWISE MUTUAL INFORMATION (PMI) ---")
+    print("\n--- POINTWISE MUTUAL INFORMATION (PMI) ---")
     analyze_mutual_information(jungle_book_path, pmi_plot)
 
-    print("\n--- TASK 3: WIKIPEDIA LANGUAGE MODEL ---")
+    print("\n--- WIKIPEDIA LANGUAGE MODEL ---")
     analyze_language_model(wiki_train, wiki_valid, wiki_test, lm_plot)
 
     print("\n==================================================")
