@@ -5,8 +5,6 @@ This repository provides an educational, hands-on walk-through of three fundamen
 2. **Pointwise Mutual Information (PMI)** — Quantifying word associations (collocations).
 3. **N-Gram Language Models** — Measuring text predictability using perplexity on the WikiText-2 dataset.
 
-Each module is designed as an interactive lesson, supported by empirical findings and data visualizations.
-
 ---
 
 ## Repository Structure
